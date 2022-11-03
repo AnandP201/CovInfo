@@ -23,7 +23,7 @@ const Loader = ({ content }) => {
           marginLeft: "0.5em",
         }}
       >
-        {`Loading ${content}......`}
+        {`${content}......`}
       </div>
     </div>
   );

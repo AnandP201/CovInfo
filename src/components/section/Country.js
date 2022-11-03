@@ -125,7 +125,7 @@ const Country = () => {
 
   return (
     <div className="country_section animate__animated animate__fadeIn">
-      {isLoading && <Loader content={"data"} />}
+      {isLoading && <Loader content={"Fetching data...."} />}
       {!isLoading && (
         <div
           className="animate__animated animate__headShake"

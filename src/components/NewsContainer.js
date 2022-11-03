@@ -59,7 +59,7 @@ const NewsContainer = () => {
 
   return (
     <div>
-      {isLoading && <Loader content={"news"} />}
+      {isLoading && <Loader content={"Loading news"} />}
       {!isLoading && (
         <div className="news_carousel_container animate__animated animate__fadeIn">
           <div className="news_carousel">

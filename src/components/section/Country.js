@@ -129,7 +129,7 @@ const Country = () => {
       {!isLoading && (
         <div
           className="animate__animated animate__headShake"
-          style={{ marginTop: "0.8em", padding: `${isPhone ? "1em" : ""}` }}
+          style={{ marginTop: "0.6em", padding: `${isPhone ? "1em" : ""}` }}
         >
           <h2
             style={{

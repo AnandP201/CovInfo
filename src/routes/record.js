@@ -3,14 +3,6 @@ const router = express.Router();
 const Record = require("../models/Record");
 require("dotenv").config();
 
-router.get("/", async (req, res) => {
-  try {
-    res.send({ message: "Hellow" });
-  } catch (e) {
-    res.send({ message: "Error in Fetching user" });
-  }
-});
-
 router.post("/", async (req, res) => {
   const { name, phno, desc, location, dor } = req.body;
 

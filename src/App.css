@@ -614,7 +614,7 @@ input.red_border {
 
   gap: 10px;
   /* background: rgba(138, 43, 226, 0.5); */
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .state_search_bar {
@@ -718,10 +718,9 @@ input.red_border {
 }
 
 .guidelines {
-  padding: 0.5em 4em;
+  padding: 0.5em 6em;
   margin-top: 10px;
   font-size: 0.9em;
-
   display: flex;
   align-items: center;
 }
@@ -733,7 +732,7 @@ input.red_border {
 }
 .guidelines_body {
   border-left: 2px solid #ccc;
-  padding: 0.5em;
+  padding: 0.5em 2em;
   height: 100%;
 }
 
@@ -845,6 +844,11 @@ ul li {
 
   .location-section {
     width: auto;
+  }
+
+  .p_info_modal {
+    width: 80%;
+    font-size: 0.8em;
   }
 
   .loc_container {

@@ -14,6 +14,9 @@ InitiateMongoServer();
 app.use(express.json());
 app.use(cors());
 
+app.use("/user", user);
+app.use("/record", record);
+
 if (process.env.NODE_ENV == "production") {
   app.use(express.static("./build"));
   const path = require("path");
@@ -21,9 +24,6 @@ if (process.env.NODE_ENV == "production") {
     res.sendFile(path.resolve(__dirname, "build", "index.html"));
   });
 }
-
-app.use("/user", user);
-app.use("/record", record);
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
